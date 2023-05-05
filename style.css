@@ -1,0 +1,16 @@
+* {
+    border: 1px solid red;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+}
+
+#backdrop {
+    object-fit: cover;
+    margin: 5px;
+    height: 90vh;
+}

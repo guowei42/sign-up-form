@@ -5,43 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <!--<link rel="stylesheet" type="text/css" href="reset.css">-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <img id="backdrop" src="backdrop.png">
+    <div class="backdrop"></div>
     <div>
-        <p>
+        <p id="header">
             This is not a real online service! You know you need something like 
-            this in your life to help you realize your deepest dreams. Sign
-            up <em>now</em> to get started.
+            this in your life to help you realize your deepest dreams. <br> Sign
+            up <span class="italics">word</span> to get started. <br><br>
+            You <span class="italics">know</span> you want to.
         </p>
-        <p>
-            You <em>know</em> you want to.
-        </p>
+
         <form onsubmit="return false;">
-            <div>
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name">
-        
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name">
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-        
-                <label for="phone_number">Phone Number:</label>
-                <input type="number" id="phone_number" name="phone_number">
-        
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
-        
-                <label for="confirm_password">Confirm Password:</label>
-                <input type="password" id="confirm_password" name="confirm_password">
+            <div class="account">
+                <label>
+                    <span>First Name:</span>
+                    <input type="text" name="first_name">
+                </label>
+                <label>
+                    <span>Last Name:</span>
+                    <input type="text" name="last_name">
+                </label>
+                <label>
+                    <span>Email:</span>
+                    <input type="text" name="email">
+                </label>
+                <label>
+                    <span>Phone Number:</span>
+                    <input type="text" name="phone_number">
+                </label>
+                <label>
+                    <span>Password:</span>
+                    <input type="text" name="password">
+                </label>
+                <label>
+                    <span>Confirm Password:</span>
+                    <input type="text" name="confirm_password">
+                </label>
             </div>
             <button type="submit">Create Account</button>
         </form>
+        <p id="footer">Already have an account? <a href="#">Log in</a></p>
+        
+
     </div>
 </body>
 </html>

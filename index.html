@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <!--<link rel="stylesheet" type="text/css" href="reset.css">-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
-    <div class="backdrop"></div>
-    <div>
-        <p id="header">
+    <div class="primary">
+        <p class="overlay">Into the City</p>
+        <div class="backdrop"></div>
+        <p class="credit">Credit: Levon Vardanyan</p>
+    </div>
+    
+    <div class="secondary">
+        <p id="header" class="neon">
             This is not a real online service! You know you need something like 
             this in your life to help you realize your deepest dreams. <br> Sign
             up <span class="italics">word</span> to get started. <br><br>
@@ -22,7 +27,7 @@
         <form onsubmit="return false;">
             <div class="account">
                 <label>
-                    <span>First Name:</span>
+                    <span >First Name:</span>
                     <input type="text" name="first_name">
                 </label>
                 <label>
@@ -31,26 +36,27 @@
                 </label>
                 <label>
                     <span>Email:</span>
-                    <input type="text" name="email">
+                    <input type="email" name="email">
                 </label>
                 <label>
                     <span>Phone Number:</span>
-                    <input type="text" name="phone_number">
+                    <input type="number" name="phone_number">
                 </label>
                 <label>
                     <span>Password:</span>
-                    <input type="text" name="password">
+                    <input type="password" id="password" name="password">
                 </label>
                 <label>
                     <span>Confirm Password:</span>
-                    <input type="text" name="confirm_password">
+                    <input type="password" id="confirm_password" name="confirm_password">
                 </label>
             </div>
-            <button type="submit">Create Account</button>
+            <button type="submit" id="check_password">Create Account</button>
         </form>
         <p id="footer">Already have an account? <a href="#">Log in</a></p>
         
 
     </div>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

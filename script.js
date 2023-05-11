@@ -3,9 +3,8 @@ function checkPassword() {
     const confirm_password = document.getElementById("confirm_password");
     console.log(password);
     console.log(confirm_password);
-    if (password == confirm_password) {
+    if (password != "" && confirm_password != "" && password.value == confirm_password.value) {
         confirm_password.style.backgroundColor = "green";
-        
         return true;
     } else {
         confirm_password.style.backgroundColor = "red";
@@ -19,8 +18,8 @@ confirm_password.addEventListener("input", checkPassword);
 const button = document.getElementById("check_password");
 button.addEventListener("click", () => {
     if (checkPassword()) {
-        alert("Password matches");
+        alert("Welcome!");
     } else  {
         alert("Password does not match, try again!");
     }
-})
+});

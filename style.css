@@ -86,6 +86,16 @@ div.account {
     border: 1px solid rgba(0, 255, 255, 0.205);
 }
 
+@media screen and (max-width: 1124px) {
+    div.account {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 0.35fr));
+        grid-column-gap: 70px;
+        padding: 0px var(--left-margin);
+        border: 1px solid rgba(0, 255, 255, 0.205);
+    }
+}
+
 div.account > label {
     display: inline-flex;
     flex-direction: column;
@@ -140,6 +150,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
+
 #footer {
     margin-left: var(--left-margin);
 }
